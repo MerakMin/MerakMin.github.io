@@ -1,0 +1,10 @@
+div{
+    background-color: deeppink;
+}
+img{
+    width: 150;
+    height: 150; 
+    border-radius: 70%;
+    overflow: hidden;
+    float: left;
+}
