@@ -1,1 +1,1 @@
-# MerakMin.github.io
+# 1310 서수민
