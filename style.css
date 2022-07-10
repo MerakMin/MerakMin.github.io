@@ -1,10 +1,107 @@
-div{
-    background-color: deeppink;
+*,*:after,*:before {
+    box-sizing: border-box;
 }
-img{
-    width: 150;
-    height: 150; 
-    border-radius: 70%;
+html {
+    font-size: 10px;
+    color: #333;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Lato','Nanum Gothic' sans-serif;
+    line-height: 1.5;
+}
+body.lock {
     overflow: hidden;
-    float: left;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+section {
+    width: calc(100vw - 17px);
+    position: relative;
+}
+body.lock section {
+    width: 100vw;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 333;
+}
+.gnbList {
+    font-size: 1.8rem;
+    font-weight: 700;
+    /* background:linear-gradient(30deg, rgba(161,140,209,0.6), rgba(251,194,235,0.5)); */
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+    background: rgba(255,255,255,0.3);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #fff;
+}
+.gnbList li a {
+    display: block;
+    padding: 25px 35px;
+    position: relative;
+    transition: 0.25s ease;
+}
+.gnbList li a:after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.25s ease;
+    transform: scale(0);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
