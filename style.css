@@ -36,7 +36,6 @@ header {
 .gnbList {
     font-size: 1.8rem;
     font-weight: 700;
-    /* background:linear-gradient(30deg, rgba(161,140,209,0.6), rgba(251,194,235,0.5)); */
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
     background: rgba(255,255,255,0.3);
     display: flex;
@@ -82,7 +81,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
